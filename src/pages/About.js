@@ -1,8 +1,12 @@
 import React from "react"
 import bgImg from "../assets/images/about-hero.png"
-import { Link } from "react-router-dom"
+import { Link, useOutletContext } from "react-router-dom"
 
 export default function About() {
+
+    const dd = useOutletContext();
+    console.log(dd)
+
     return (
         <div className="about-page-container">
             <img src={bgImg} className="about-hero-image" alt="" />
